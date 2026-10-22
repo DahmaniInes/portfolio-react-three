@@ -49,8 +49,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      Final year Full-Stack Development student with a strong passion for DevOps and AI. Skilled in building scalable and efficient web applications using modern technologies and frameworks. Experienced in data analysis and business intelligence, I combine technical expertise with analytical insights to deliver impactful solutions. Enthusiastic about collaborating on innovative projects and turning ideas into real-world applications.
-      </motion.p>
+I’m a Full-Stack Engineer who designs, builds, and deploys scalable web applications end to end. With a growing focus on DevOps, Cloud, and AI, plus a Bachelor’s degree in Business Intelligence, I combine solid engineering with analytical thinking to turn complex problems into simple, elegant solutions.       
+        </motion.p>
       
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

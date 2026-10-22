@@ -25,6 +25,8 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import st2i from "./company/st2i.png";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -50,6 +52,14 @@ import next from "./tech/next.png";
 import php from "./tech/php.png";
 import spring from "./tech/spring.png";
 import symfony from "./tech/symfony.png";
+import express from "./tech/express.png";
+import fastapi from "./tech/fastapi.png";
+import kubernetes from "./tech/Kubernate.png";
+import aws from "./tech/aws.png";
+import azure from "./tech/Azure.png";
+import powerbi from "./tech/powerbi.png";
+
+
 
 
 
@@ -129,4 +139,11 @@ export {
   jobit,
   tripguide,
   curly,
+  st2i,
+  express,
+  fastapi,
+  kubernetes,
+  aws,
+  azure,
+  powerbi,
 };

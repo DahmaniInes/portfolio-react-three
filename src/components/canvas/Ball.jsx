@@ -4,7 +4,7 @@ const TechCard = ({ icon, name }) => {
   return (
     <div className="group relative flex flex-col items-center gap-3">
       {/* Card principale */}
-      <div className="relative w-24 h-24 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex items-center justify-center overflow-hidden">
+      <div className="relative w-20 h-20 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex items-center justify-center overflow-hidden">
         {/* Icon container */}
         <div className="relative z-10 w-16 h-16 flex items-center justify-center">
           <img 

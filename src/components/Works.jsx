@@ -107,8 +107,7 @@ const Works = () => {
           viewport={{ once: true, amount: 0.1 }}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          These academic projects demonstrate the skills and knowledge I acquired during my studies. Each project highlights practical applications of technologies, problem-solving abilities, and my capacity to implement innovative solutions, often through effective collaboration in team settings.
-        </motion.p>
+          These projects showcase my experience in developing web applications, exploring AI-driven solutions, and implementing DevOps practices. Built as part of collaborative academic projects, they demonstrate my technical skills, problem-solving abilities, and experience working with modern technologies across different areas of software engineering.        </motion.p>
       </div>
 
       {/* Changement principal : Enveloppez dans motion.div avec stagger */}

@@ -52,6 +52,13 @@ import {
   threejs,
   ecommerce,
   angular,
+  st2i,
+  express,
+  fastapi,
+  kubernetes,
+  aws,
+  azure,
+  powerbi,
 } from "../assets";
 
 export const navLinks = [
@@ -60,6 +67,11 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+
+  {
     id: "work",
     title: "Work",
   },
@@ -67,23 +79,25 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+
+ 
 ];
 
 const services = [
   {
-    title: "Full-Stack Web Developer",
+    title: "Full-Stack Development",
     icon: web,
   },
   {
-    title: "DevOps Enthusiast",
+    title: "DevOps & Cloud",
     icon: backend,
   },
   {
-    title: "AI/ML Enthusiast",
+    title: "AI & Machine Learning",
     icon: IAML,
   },
   {
-    title: "Data Analysis & BI",
+    title: "Data Analytics & BI",
     icon: mobile,
   },
 
@@ -91,99 +105,142 @@ const services = [
 
 
 const technologies = [
-  // 🌐 Front-end
+  // Frontend
+  { name: "Angular", icon: angular },
+  { name: "React.js", icon: reactjs },
+  { name: "TypeScript", icon: typescript },
+  { name: "JavaScript", icon: javascript },
+  { name: "Next.js", icon: next }, // à vérifier
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Three.js", icon: threejs },
   { name: "HTML5", icon: html },
   { name: "CSS3", icon: css },
-  { name: "JavaScript", icon: javascript },
-  { name: "TypeScript", icon: typescript },
-  { name: "React.js", icon: reactjs },
-  //{ name: "Redux Toolkit", icon: redux },
-  { name: "Angular", icon: angular },
-  { name: "Next.js", icon: next },
-  { name: "Tailwind CSS", icon: tailwind },
-  { name: "Bootstrap", icon: bootstrap },
 
-  // ⚙️ Back-end
-  { name: "Node.js", icon: nodejs },
+  // Backend
   { name: "Spring Boot", icon: spring },
+  { name: "Node.js", icon: nodejs },
+  { name: "Express.js", icon: express },
+  { name: "Java", icon: java },
+  { name: "Django", icon: django },
+  { name: "FastAPI", icon: fastapi },
+  { name: "Flask", icon: flask },
+  { name: "Python", icon: python },
   { name: "Laravel", icon: laravel },
   { name: "Symfony", icon: symfony },
-  { name: "Django", icon: django },
-  { name: "Flask", icon: flask },
-  { name: ".NET", icon: net },
   { name: "PHP", icon: php },
-  { name: "Java", icon: java },
-  { name: "Python", icon: python },
+  { name: ".NET", icon: net }, // à vérifier
 
-  // 🗄️ Bases de données
-  { name: "MySQL", icon: mysql },
+  // Data
   { name: "PostgreSQL", icon: postgresql },
+  { name: "MySQL", icon: mysql },
   { name: "MongoDB", icon: mongodb },
-  { name: "Oracle", icon: oracle },
-  { name: "HBase", icon: hbase },
+  { name: "Power BI", icon: powerbi },
+  { name: "Oracle", icon: oracle }, // à vérifier
 
-  // 🧰 DevOps / Cloud / Tools
+  // DevOps & Cloud
   { name: "Docker", icon: docker },
+  { name: "Kubernetes", icon: kubernetes },
   { name: "Jenkins", icon: jenkins },
   { name: "SonarQube", icon: sonarqube },
   { name: "Nexus", icon: nexus },
   { name: "Prometheus", icon: promotheus },
   { name: "Grafana", icon: grafana },
+  { name: "Microsoft Azure", icon: azure },
+  { name: "AWS", icon: aws }, // à vérifier
   { name: "Git", icon: git },
-  { name: "Firebase", icon: firebase },
-  { name: "Figma", icon: figma },
-  { name: "Three.js", icon: threejs },
 ];
+const technologyGroups = [
+  {
+    title: "Frontend & Design",
+    names: [
+      "HTML5", "CSS3", "JavaScript", "TypeScript", "React.js", "Angular",
+      "Next.js", "Tailwind CSS", "Bootstrap", "Three.js", "Figma",
+    ],
+  },
+  {
+    title: "Backend",
+    names: [
+      "Node.js", "Express.js", "Spring Boot", "Laravel", "Symfony", "Django",
+      "Flask", "FastAPI", ".NET", "PHP", "Java", "Python",
+    ],
+  },
+  {
+    title: "Data",
+    names: ["MySQL", "PostgreSQL", "MongoDB", "Oracle", "HBase", "Firebase", "Power BI"],
+  },
+  {
+    title: "DevOps & Cloud",
+    names: [
+      "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "SonarQube", "Nexus",
+      "Prometheus", "Grafana", "AWS", "Microsoft Azure", "Git",
+    ],
+  },
+].map((group) => ({
+  title: group.title,
+  items: group.names
+    .map((name) => technologies.find((t) => t.name === name))
+    .filter(Boolean),
+}));
 
 const experiences = [
+
   {
-    title: "Full-Stack Web Developer",
+    title: "Full-Stack Developer Intern",
+    company_name: "ST2i International",
+    icon: st2i,
+    iconBg: "#FFFFFF",
+    date: "February 2026 – July 2026",
+    points: [
+      "Developed TalentHub, an HR management platform based on microservices architecture.",
+      "Built responsive interfaces and backend services with Angular and Spring Boot.",
+      "Implemented authentication and access control using Keycloak and Redis.",
+      "Configured CI/CD pipelines and deployed the application on Azure AKS.",
+      "Technologies: Angular, Tailwind CSS, Java, Spring Boot, PostgreSQL, Keycloak, Redis, Docker, Kubernetes, Azure, Jenkins, SonarQube."
+      ],
+  },
+
+  {
+    title: "Full-Stack Web Developer Intern",
     company_name: "Vision Age VFX",
     icon: VFX,
     iconBg: "#000000",
-    //iconBg: "#383E56",
     date: "June 2025 – August 2025",
     points: [
-      "Development and integration of a web platform for VFX project management.",
-      "Implementation of intelligent video analysis features with AI modules.",
-      "Integration of MLOps pipelines for AI and data workflows.",
-      "User management system including roles and permissions.",
-      "Technologies used: MERN (MongoDB, Express, React, Node.js), Flask, Ftrack.",
+      "Developed a web platform for VFX project management.",
+      "Integrated AI-powered video analysis and automatic shot detection.",
+      "Contributed to MLOps workflows and CI/CD automation.",
+      "Implemented user authentication and role-based access control.",
+      "Technologies: MongoDB, Express.js, React.js, Node.js, Python, FastAPI, Docker, Kubernetes, Jenkins, Nexus, Prometheus, Grafana, Git, Ftrack."
     ],
-    
-    
   },
   {
-    title: "Full-Stack Web Developer",
+    title: "Full-Stack Web Developer Intern",
     company_name: "Leadiya",
     icon: tesla,
     iconBg: "#FFFFFF",
-    //iconBg: "#E6DEDD",
     date: "June 2024 – August 2024",
     points: [
-      "Development and implementation of multiple web solutions for training platforms, automotive repair applications, and more.",
-      "Integration of tracking tools to analyze traffic and monitor user behavior.",
-      "Utilization of technologies such as WordPress, JavaScript, PHP, Google Analytics, and Google Tag Manager to build and optimize web applications.",
-      "Ensuring responsive design and high-quality user experience across different devices and browsers."
+      "Developed web solutions for training platforms and automotive repair applications.",
+      "Integrated analytics and tracking tools to monitor website traffic and user behavior.",
+      "Optimized responsive interfaces and user experience across devices.",
+      "Technologies: WordPress, JavaScript, PHP, Google Analytics 4, Google Tag Manager, Power BI."
     ],
-    
   },
   {
-    title: "Data Analyst & Full-Stack Web Developer",
+    title: "Data Analyst & Full-Stack Web Developer Intern",
     company_name: "Québec Training Center",
     icon: starbucks,
     iconBg: "#FFFFFF",
-    //iconBg: "#383E56",
     date: "February 2023 – April 2023",
     points: [
-      "Final year internship: Design and implementation of the web application « Teco.tn » for monitoring Tunisia’s financial, economic, and social situation.",
-      "Integration of a recommendation and prediction system to enhance analysis and decision-making.",
-      "Development and implementation of the web interface using Angular",
-      "Data processing and integration with Talend, visualization and reporting through Power BI.",
-      "Implementation of a responsive design ensuring an optimal user experience."
+      "Developed Teco.tn, a web application for monitoring Tunisia's economic, financial, and social indicators.",
+      "Built interactive interfaces using Angular to visualize key indicators.",
+      "Processed and integrated data using Talend Open Studio.",
+      "Implemented recommendation and prediction features using Python.",
+      "Created interactive dashboards and reports using Power BI.",
+      "Technologies: Angular, Python, Talend Open Studio, Power BI."
     ],
-    
-  },
+  }
  
 ];
 
@@ -218,151 +275,11 @@ const testimonials = [
 
 
 const projects = [
-
- 
-  {
-    name: "Echofy",
-    description:
-"A responsive platform called Echofy featuring events, awareness campaigns, and communities on various topics, with sponsorship opportunities to support environmental initiatives. Includes a CI/CD pipeline.",    
-  date: "In progress", // Ajoutez la date ici
-      tags: [
-      {
-        name: "Laravel",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Flask",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL",
-        color: "pink-text-gradient",
-      },
-
-      {
-        name: "Docker",
-        color: "yellow-text-gradient",
-      },
-      { name: "Machine Learning", color: "purple-text-gradient", },
-
-      {
-        name: "Jenkins",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Nexus",
-        color: "red-text-gradient",
-      },
-      {
-        name: "SonarQube",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Prometheus",
-        color: "cyan-text-gradient",
-      },
-      {
-        name: "Grafana",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: echofy,
-    source_code_link: "https://github.com/Taha-Yassine-Hadded/EcoEvents-Laravel",
-  },
-  {
-    name: "VestaVerse",
-    description:
-"A social travel network enabling users to join groups and communities, match and meet fellow travelers, share multimedia content, with built-in security and content moderation features. Includes a CI/CD pipeline.",
-    date: "In progress", // Ajoutez la date ici
-
-      tags: [
-      {
-        name: "Django",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Mongo",
-        color: "green-text-gradient",
-      },
-      { name: "Machine Learning", color: "pink-text-gradient", },
-      
-       {
-        name: "Docker",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Jenkins",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Nexus",
-        color: "red-text-gradient",
-      },
-      {
-        name: "SonarQube",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Prometheus",
-        color: "cyan-text-gradient",
-      },
-      {
-        name: "Grafana",
-        color: "pink-text-gradient",
-      },
-            
-      
-    ],
-    image: VestaVerse,
-    source_code_link: "https://github.com/Taha-Yassine-Hadded/Socialite",
-  },
-  {
-    name: "SmartCom",
-    description:
-     "E-commerce application for home appliances based on semantic web architecture, featuring an intelligent recommendation system, product management, shopping cart, secure payment, and user behavior analysis.",      date: "In progress", // Ajoutez la date ici
-      tags: [
-      {
-        name: "Django",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Mongo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JWT",
-        color: "red-text-gradient",
-      },
-      {
-        name: "bcrypt",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Cloudinary",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "WebRTC",
-        color: "pink-text-gradient",
-      },
-      { name: "NLP",
-       color: "purple-text-gradient"
-       },
-      
-    ],
-    image: ecommerce,
-    source_code_link: "https://github.com/",
-  },
-
   {
     name: "MindSpark",
     description:
 "A web-based skill exchange platform for learning, sharing, and collaborating, featuring gamification, real-time chat, a virtual assistant, internship matching, smart CV filtering, and a CI/CD pipeline",
-    date: "2024", // Ajoutez la date ici
+    date: "2024", 
 
       tags: [
       {
@@ -412,32 +329,102 @@ const projects = [
     image: carrent,
     source_code_link: "https://github.com/DahmaniInes/Skill-Exchange-full-stack-JS",
   },
+ 
   {
-    name: "CurlyHair",
+    name: "Echofy",
     description:
-   "Front-end development of a responsive web platform selling organic hair care products, allowing users to scan and analyze their hair type and receive personalized product recommendations for optimal care.",
-        date: "2024", 
-
-    tags: [
+"A responsive platform called Echofy featuring events, awareness campaigns, and communities on various topics, with sponsorship opportunities to support environmental initiatives. Includes a CI/CD pipeline.",    
+  date: "2025", // Ajoutez la date ici
+      tags: [
       {
-        name: "React.js",
+        name: "Laravel",
         color: "blue-text-gradient",
       },
       {
-        name: "Tailwind CSS",
+        name: "Flask",
         color: "green-text-gradient",
       },
       {
-        name: "Figma",
+        name: "MySQL",
         color: "pink-text-gradient",
       },
+
       {
-        name: "Framer Motion",
+        name: "Docker",
         color: "yellow-text-gradient",
       },
+      { name: "Machine Learning", color: "purple-text-gradient", },
+
+      {
+        name: "Jenkins",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Nexus",
+        color: "red-text-gradient",
+      },
+      {
+        name: "SonarQube",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Prometheus",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "Grafana",
+        color: "pink-text-gradient",
+      },
     ],
-    image: curly,
-    source_code_link: "https://github.com/DahmaniInes/Curly-Hair",
+    image: echofy,
+    source_code_link: "https://github.com/Taha-Yassine-Hadded/EcoEvents-Laravel",
+  },
+  {
+    name: "VestaVerse",
+    description:
+"A social travel network enabling users to join groups and communities, match and meet fellow travelers, share multimedia content, with built-in security and content moderation features. Includes a CI/CD pipeline.",
+    date: "2025", // Ajoutez la date ici
+
+      tags: [
+      {
+        name: "Django",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongo",
+        color: "green-text-gradient",
+      },
+      { name: "Machine Learning", color: "pink-text-gradient", },
+      
+       {
+        name: "Docker",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Jenkins",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Nexus",
+        color: "red-text-gradient",
+      },
+      {
+        name: "SonarQube",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Prometheus",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "Grafana",
+        color: "pink-text-gradient",
+      },
+            
+      
+    ],
+    image: VestaVerse,
+    source_code_link: "https://github.com/Taha-Yassine-Hadded/Socialite",
   },
   {
     name: "SmartBiblio",
@@ -485,6 +472,78 @@ const projects = [
     image: jobit,
     source_code_link: "https://github.com/DahmaniInes/gestion-bibliotheque-Back-MicroService-",
   },
+  {
+    name: "SmartCom",
+    description:
+     "E-commerce application for home appliances based on semantic web architecture, featuring an intelligent recommendation system, product management, shopping cart, secure payment, and user behavior analysis.",   
+       date: "2025", // Ajoutez la date ici
+      tags: [
+      {
+        name: "Django",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "red-text-gradient",
+      },
+      {
+        name: "bcrypt",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Cloudinary",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WebRTC",
+        color: "pink-text-gradient",
+      },
+      { name: "NLP",
+       color: "purple-text-gradient"
+       },
+      
+    ],
+    image: ecommerce,
+    source_code_link: "https://github.com/",
+  },
+
+ 
+  {
+    name: "CurlyHair",
+    description:
+   "Front-end development of a responsive web platform selling organic hair care products, allowing users to scan and analyze their hair type and receive personalized product recommendations for optimal care.",
+        date: "2024", 
+
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Figma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: curly,
+    source_code_link: "https://github.com/DahmaniInes/Curly-Hair",
+  },
+ 
   {
     name: "FemHeath",
     description:
@@ -546,4 +605,4 @@ const projects = [
 
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, technologyGroups, experiences, testimonials, projects };

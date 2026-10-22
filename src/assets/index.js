@@ -54,9 +54,9 @@ import spring from "./tech/spring.png";
 import symfony from "./tech/symfony.png";
 import express from "./tech/express.png";
 import fastapi from "./tech/fastapi.png";
-import kubernetes from "./tech/Kubernate.png";
+import kubernetes from "./tech/kubernate.png";
 import aws from "./tech/aws.png";
-import azure from "./tech/Azure.png";
+import azure from "./tech/azure.png";
 import powerbi from "./tech/powerbi.png";
 
 

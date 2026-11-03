@@ -39,12 +39,6 @@ import ecommerce from "./ecommerce.png";
 import bootstrap from "./tech/bootstrap.png";
 import angular from "./tech/angular.png";
 import aweni from "./aweni.png";
-
-
-
-
-
-
 import django from "./tech/django.png";
 import laravel from "./tech/laravel.png";
 import net from "./tech/net.png";
@@ -58,13 +52,6 @@ import kubernetes from "./tech/kubernate.png";
 import aws from "./tech/aws.png";
 import azure from "./tech/azure.png";
 import powerbi from "./tech/powerbi.png";
-
-
-
-
-
-
-
 import firebase from "./tech/firebase.png";
 import flask from "./tech/flask.png";
 import hbase from "./tech/hbase.png";

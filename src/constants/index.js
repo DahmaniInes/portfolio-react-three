@@ -223,7 +223,6 @@ const experiences = [
       "Developed web solutions for training platforms and automotive repair applications.",
       "Integrated analytics and tracking tools to monitor website traffic and user behavior.",
       "Optimized responsive interfaces and user experience across devices.",
-      "Technologies: WordPress, JavaScript, PHP, Google Analytics 4, Google Tag Manager, Power BI."
     ],
   },
   {

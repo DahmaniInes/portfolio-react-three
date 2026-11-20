@@ -191,12 +191,13 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "February 2026 – July 2026",
     points: [
-      "Developed TalentHub, an HR management platform based on microservices architecture.",
-      "Built responsive interfaces and backend services with Angular and Spring Boot.",
-      "Implemented authentication and access control using Keycloak and Redis.",
-      "Configured CI/CD pipelines and deployed the application on Azure AKS.",
-      "Technologies: Angular, Tailwind CSS, Java, Spring Boot, PostgreSQL, Keycloak, Redis, Docker, Kubernetes, Azure, Jenkins, SonarQube."
-      ],
+      "Designed and developed TalentHub, a comprehensive HR management platform built around independent services and scalable business workflows.",
+      "Developed intelligent HR workflows for employee management, leave requests, administrative processes, performance evaluations, and activity tracking.",
+      "Implemented centralized identity management, secure authentication, fine-grained authorization, and dynamic role-based permissions.",
+      "Designed data management mechanisms, optimized database operations, and implemented caching strategies to improve application performance.",
+      "Automated software quality checks, testing, integration, and deployment workflows.",
+      "Containerized and deployed the platform on cloud infrastructure, orchestrating services and managing application availability and scalability."
+    ],
   },
 
   {
@@ -206,11 +207,12 @@ const experiences = [
     iconBg: "#000000",
     date: "June 2025 – August 2025",
     points: [
-      "Developed a web platform for VFX project management.",
-      "Integrated AI-powered video analysis and automatic shot detection.",
-      "Contributed to MLOps workflows and CI/CD automation.",
-      "Implemented user authentication and role-based access control.",
-      "Technologies: MongoDB, Express.js, React.js, Node.js, Python, FastAPI, Docker, Kubernetes, Jenkins, Nexus, Prometheus, Grafana, Git, Ftrack."
+      "Developed a VFX project management platform centralizing production workflows, project tracking, and team collaboration.",
+      "Integrated AI-powered video analysis and computer vision capabilities for automatic shot detection and intelligent video content analysis.",
+      "Developed data processing workflows to extract, analyze, and organize video information, supporting more efficient production management.",
+      "Implemented secure user management, authentication, and role-based access control.",
+      "Contributed to MLOps workflows, automating model-related processes, application testing, and continuous integration and delivery.",
+      "Containerized application services and contributed to deployment automation, monitoring, and infrastructure management."
     ],
   },
   {
@@ -220,9 +222,12 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "June 2024 – August 2024",
     points: [
-      "Developed web solutions for training platforms and automotive repair applications.",
-      "Integrated analytics and tracking tools to monitor website traffic and user behavior.",
-      "Optimized responsive interfaces and user experience across devices.",
+      "Developed and customized B2B web applications addressing business needs in the training and automotive sectors.",
+      "Designed data-driven features for business operations, information management, and document generation.",
+      "Integrated business intelligence solutions to transform operational data into meaningful insights and support business decision-making.",
+      "Worked on automated document processing, information extraction, and API integration to streamline business workflows.",
+      "Contributed to application testing, data consistency validation, and software delivery automation.",
+      "Improved application responsiveness, usability, and reliability across different devices."
     ],
   },
   {
@@ -232,15 +237,30 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "February 2023 – April 2023",
     points: [
-      "Developed Teco.tn, a web application for monitoring Tunisia's economic, financial, and social indicators.",
-      "Built interactive interfaces using Angular to visualize key indicators.",
-      "Processed and integrated data using Talend Open Studio.",
-      "Implemented recommendation and prediction features using Python.",
-      "Created interactive dashboards and reports using Power BI.",
-      "Technologies: Angular, Python, Talend Open Studio, Power BI."
+      "Developed Teco.tn, a data-driven platform for monitoring and analyzing Tunisia's economic, financial, and social indicators.",
+      "Designed data collection and ETL workflows to extract, clean, transform, validate, and integrate heterogeneous datasets.",
+      "Implemented predictive analytics and recommendation features to identify trends and generate actionable insights from historical data.",
+      "Developed interactive dashboards and data visualizations to monitor key performance indicators and support decision-making.",
+      "Built responsive interfaces and backend services to manage, process, and expose analytical data.",
+      "Contributed to application deployment, containerization, automated testing, and software quality monitoring."
+    ],
+  },
+ 
+
+  {
+    title: "Full-Stack Developer Intern",
+    company_name: "Québec Training Center",
+    icon: starbucks,
+    iconBg: "#FFFFFF",
+    date: "June 2022 – August 2022",
+    points: [
+      "Designed and developed a web-based IT service management platform for handling technical support requests and IT assets.",
+      "Implemented incident management workflows, equipment tracking, maintenance requests, and intervention monitoring.",
+      "Structured and managed operational data to improve asset traceability, request tracking, and maintenance organization.",
+      "Developed automated testing workflows to validate application functionality, API reliability, and data consistency.",
+      "Contributed to application packaging, deployment automation, and development workflow optimization."
     ],
   }
- 
 ];
 
 const testimonials = [

@@ -18,8 +18,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      // Changement : Supprimez le délai index * 0.5 (géré par le stagger du parent)
-      // et forcez un délai initial à 0 pour que le stagger prenne le relais
+     
       variants={fadeIn("up", "spring", 0, 0.75)} // Délai à 0
       initial="hidden" // Ajout explicite pour forcer l'état initial
       whileInView="show" // Déclencheur individuel en backup

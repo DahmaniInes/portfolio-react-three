@@ -300,22 +300,51 @@ const projects = [
 "A web-based skill exchange platform for learning, sharing, and collaborating, featuring gamification, real-time chat, a virtual assistant, internship matching, smart CV filtering, and a CI/CD pipeline",
     date: "2024", 
 
-      tags: [
+    tags: [
       {
-        name: "MERN",
+        name: "React.js",
         color: "blue-text-gradient",
       },
-      { name: "Machine Learning", color: "purple-text-gradient", },
-
       {
-        name: "Flask",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "Tailwind CSS",
+        name: "Express.js",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "LLMs",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "RAG",
+        color: "red-text-gradient",
+      },
+      {
+        name: "LangGraph",
         color: "pink-text-gradient",
       },
-
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
       {
         name: "Docker",
         color: "yellow-text-gradient",
@@ -325,25 +354,17 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "Nexus",
-        color: "red-text-gradient",
-      },
-      {
-        name: "SonarQube",
-        color: "yellow-text-gradient",
-      },
-      {
         name: "GitHub Actions",
         color: "green-text-gradient",
       },
       {
-        name: "Prometheus",
-        color: "cyan-text-gradient",
+        name: "SonarQube",
+        color: "purple-text-gradient",
       },
       {
-        name: "Grafana",
-        color: "pink-text-gradient",
-      },
+        name: "Azure AKS",
+        color: "blue-text-gradient",
+      }
     ],
     image: carrent,
     source_code_link: "https://github.com/DahmaniInes/Skill-Exchange-full-stack-JS",
@@ -352,49 +373,66 @@ const projects = [
   {
     name: "Echofy",
     description:
-"A responsive platform called Echofy featuring events, awareness campaigns, and communities on various topics, with sponsorship opportunities to support environmental initiatives. Includes a CI/CD pipeline.",    
-  date: "2025", // Ajoutez la date ici
-      tags: [
-      {
-        name: "Laravel",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Flask",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL",
-        color: "pink-text-gradient",
-      },
-
-      {
-        name: "Docker",
-        color: "yellow-text-gradient",
-      },
-      { name: "Machine Learning", color: "purple-text-gradient", },
-
-      {
-        name: "Jenkins",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Nexus",
-        color: "red-text-gradient",
-      },
-      {
-        name: "SonarQube",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Prometheus",
-        color: "cyan-text-gradient",
-      },
-      {
-        name: "Grafana",
-        color: "pink-text-gradient",
-      },
-    ],
+   "A responsive platform called Echofy for organizing events, launching environmental awareness campaigns, and building communities around sustainability. Features sponsorship opportunities, AI-powered recommendations, an intelligent virtual assistant, and a CI/CD pipeline.",
+   date: "2025", // Ajoutez la date ici
+   tags: [
+    {
+      name: "Laravel",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "FastAPI",
+      color: "green-text-gradient",
+    },
+    {
+      name: "MySQL",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "Machine Learning",
+      color: "purple-text-gradient",
+    },
+    {
+      name: "Generative AI",
+      color: "cyan-text-gradient",
+    },
+    {
+      name: "LLMs",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "RAG",
+      color: "red-text-gradient",
+    },
+    {
+      name: "LangChain",
+      color: "green-text-gradient",
+    },
+    {
+      name: "Docker",
+      color: "yellow-text-gradient",
+    },
+    {
+      name: "Jenkins",
+      color: "orange-text-gradient",
+    },
+    {
+      name: "Nexus",
+      color: "red-text-gradient",
+    },
+    {
+      name: "SonarQube",
+      color: "yellow-text-gradient",
+    },
+    {
+      name: "Prometheus",
+      color: "cyan-text-gradient",
+    },
+    {
+      name: "Grafana",
+      color: "pink-text-gradient",
+    },
+  ],
     image: echofy,
     source_code_link: "https://github.com/Taha-Yassine-Hadded/EcoEvents-Laravel",
   },

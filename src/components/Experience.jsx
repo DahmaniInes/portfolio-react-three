@@ -58,14 +58,20 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-        My Professional Projects
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-        Career Highlights
-        </h2>
-      </motion.div>
+  <motion.div
+  variants={textVariant()}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+>
+  <p className={`${styles.sectionSubText} text-center`}>
+    My Professional Projects
+  </p>
+
+  <h2 className={`${styles.sectionHeadText} text-center`}>
+    Career Highlights
+  </h2>
+</motion.div>
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
